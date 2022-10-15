@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: royalblue;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        a:active {
+            color: pink;
+        }
+
+        a::after {
+            content: " teste";
+            text-decoration: underline;
+            color: black;
+            font-weight: normal;
+        }
+
+        .especial {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas com CSS</h1>
+    <ul>
+        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+        <li><a href="http://www.youtube.com" target="_blank" class="especial">Youtube</a></li>
+        <li><a href="http://www.globo.com" target="_blank">Globo</a></li>
+    </ul>
+</body>
+</html>
